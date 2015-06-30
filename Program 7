@@ -1,0 +1,26 @@
+//WAP to enter a string and check whether its a plaindrome string or not.!
+
+import java.lang.*;
+class prog7
+{
+	public static void main(String args[])
+	{
+		String s,w="";
+		s=args[0];
+		char c;
+		int i,l;
+		l=s.length();
+
+		// System.out.println(l);
+		
+		for(i=l-1;i>=0;i--)
+		{
+			c=s.charAt(i);
+			w=w+c;
+		}
+		if(w.equals(s))
+			System.out.println("Palindrome");
+		else
+			System.out.println("Not palindrome");
+	}
+}
